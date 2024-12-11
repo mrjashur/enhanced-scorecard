@@ -1,0 +1,49 @@
+{
+  "name": "Enhanced Scorecard",
+  "description": "Scorecard visualization with extended comparison color palette.",
+  "id": "enhanced_scorecard",
+  "components": [
+    {
+      "type": "viz",
+      "id": "scorecard",
+      "features": {
+        "comparisonColorPalette": {
+          "type": "colorPalette",
+          "description": "Extended color palette for comparison metrics.",
+          "default": [
+            "#34A853",
+            "#EA4335",
+            "#FBBC05",
+            "#4285F4",
+            "#F4B400",
+            "#0F9D58"
+          ],
+          "allowCustomization": true
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "style": {
+      "comparisonColors": {
+        "type": "colorPalettePicker",
+        "label": "Comparison Colors",
+        "description": "Select colors for trends in comparison metrics.",
+        "options": {
+          "palette": "comparisonColorPalette",
+          "allowCustomColors": true
+        }
+      }
+    },
+    "data": {
+      "comparisonMetric": {
+        "type": "metric",
+        "label": "Comparison Metric",
+        "description": "The metric to compare against the primary metric."
+      }
+    }
+  },
+  "author": "maxxxx",
+  "version": "1.1.0",
+  "tags": ["visualization", "scorecard", "customization", "colors"]
+}
